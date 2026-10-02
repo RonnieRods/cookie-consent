@@ -1,0 +1,136 @@
+/* CSS RESET BELOW */
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* CSS RESET ABOVE */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+.cookie-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cookie-content p {
+    font-size: 0.9rem;
+}
+
+.cookie-content a {
+    color: #3498db;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.cookie-content a:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-accept {
+    background-color: #2ecc71;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-accept:hover {
+    background-color: darkgreen;
+}
+
+.btn-decline {
+    background-color: #e74c3c;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-decline:hover {
+    background-color: darkred;
+}
+
+.hidden {
+    display: none !important;
+}
